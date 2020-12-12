@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,500&display=swap');
+
 :root {
   --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-mono: Source Code Pro, monospace;
+  --font-family-main: "Rubik", sans-serif;
 
   --color-black: #202123;
   --color-dark-gray: #32373e;
@@ -7,7 +12,8 @@
   --color-light-gray: #b4bcc7;
   --color-very-light-gray: #e7ebed;
   --color-white: #fff;
-  --color-accent: #156dff;
+  --color-accent: #6cb6bf;
+  --color-lavender: #D9AFD9;
 
   /* Typography */
   --unit: 16;

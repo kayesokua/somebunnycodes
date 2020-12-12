@@ -27,9 +27,9 @@ function BlogPostPreview (props) {
         )}
       </div>
       <div className={styles.text}>
-        <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
+        <h3 className={cn(responsiveTitle3, styles.title,"truncate-title")}>{props.title}</h3>
         {props._rawExcerpt && (
-          <div className={styles.excerpt}>
+          <div className={cn(styles.excerpt,"truncate","fade")}>
             <PortableText blocks={props._rawExcerpt} />
           </div>
         )}

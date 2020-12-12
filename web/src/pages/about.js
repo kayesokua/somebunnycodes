@@ -1,24 +1,16 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import { mapEdgesToNodes } from '../lib/helpers'
-import BlogPostPreviewGrid from '../components/blog-post-preview-grid'
+import {graphql} from 'gatsby'
+import {mapEdgesToNodes} from '../lib/helpers'
 import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 
-import { responsiveTitle1 } from '../components/typography.module.css'
+import {responsiveTitle1} from '../components/typography.module.css'
 
-export const query = graphql`
-  query AboutPageQuery {
-    sanityPage(slug:{current:{eq:"about"}}){
-      title
-    }
-  }
-`
 
 const AboutPage = props => {
-  const { data, errors } = props
+  const {data, errors} = props
 
   if (errors) {
     return (
@@ -28,12 +20,13 @@ const AboutPage = props => {
     )
   }
 
+  const postNodes = data && data.posts && mapEdgesToNodes(data.posts)
+
   return (
     <Layout>
-      <SEO title='That somebunny who codes' />
+      <SEO title='About' />
       <Container>
         <h1 className={responsiveTitle1}>About</h1>
-        <pre>{JSON.stringify(data, null,2)}</pre>
       </Container>
     </Layout>
   )

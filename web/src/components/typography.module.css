@@ -1,7 +1,7 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
-
-
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,300;1,700&display=swap');
 
 /*
  * Statically sized elements
@@ -53,6 +53,8 @@
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
   margin: 0.5rem 0 1rem 0;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
 
   @media (--media-min-small) {
     font-size: var(--font-base-size);
@@ -68,12 +70,22 @@
 .blockQuote {
   background: var(--color-very-light-gray);
 }
+blockquote{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0.5em;
+  margin: 0 0 0 0.5em;
+  border-left: 3pt solid var(--color-lavender); 
+}
 
 .responsiveTitle1 {
   font-weight: 600;
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
   margin: 1rem 0 2rem;
+  font-family: 'Rubik', sans-serif;
+
 
   @media (--media-min-small) {
     font-size: var(--font-title2-size);
@@ -104,6 +116,7 @@
 }
 
 .responsiveTitle3 {
+  color: var(--color-dark-gray);
   font-weight: 600;
   font-size: var(--font-large-size);
   line-height: var(--font-large-line-height);
@@ -135,4 +148,9 @@
     font-size: var(--font-large-size);
     line-height: var(--font-large-line-height);
   }
+}
+
+p{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
 }
