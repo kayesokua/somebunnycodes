@@ -6,6 +6,7 @@
 }
 
 .headline {
+  font-family:var(--font-family-mono)!important;
   font-size: var(--font-micro-size);
   line-height: var(--font-micro-line-height);
   font-weight: 600;
@@ -13,6 +14,7 @@
   letter-spacing: 0.5px;
   margin: 2rem 0;
 }
+
 
 .grid {
   margin: 0;
@@ -32,7 +34,6 @@
 }
 
 .browseMoreNav {
-  composes: small from './typography.module.css';
   margin-top: 1rem;
   text-align: right;
 

@@ -4,6 +4,7 @@
 .root {
   position: relative;
   z-index: 100;
+  
 }
 
 .wrapper {
@@ -24,7 +25,6 @@
   flex: 1;
 
   @nest & a {
-    border-radius: 10px;
     display: inline-block;
     padding: 0.5em;
     color: var(--color-black);
@@ -43,10 +43,10 @@
   }
 }
 .branding a:after{
-  content:'🐇';
+  content:' 🐇';
 }
 .branding a:hover:after{
-  content:'💀';
+  content:' 💀';
 }
 
 @keyframes rainbowglitch {
@@ -140,6 +140,8 @@
 }
 
 .nav {
+  font-family: var(--font-family-main);
+  font-size: var(--font-small-size);
   display: none;
 
   @nest & ul {
@@ -156,6 +158,8 @@
   @media (hover: hover) {
     @nest & ul li a:hover {
       color: var(--color-accent);
+      text-decoration: underline;
+      cursor: url("https://www.flaticon.com/svg/static/icons/svg/2919/2919803.svg"),auto;
     }
   }
 

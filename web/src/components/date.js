@@ -5,5 +5,5 @@ export default function Date({ dateString }) {
     return 'No date'
   }
   const date = parseISO(dateString)
-  return <time dateTime={dateString}>{format(date, 'd LLLL, yyyy')}</time>
+  return <time dateTime={dateString}>{format(date, 'do LLLL, yyyy')}</time>
 }

@@ -7,7 +7,7 @@ import styles from './author-list.module.css'
 function AuthorList ({items, title}) {
   return (
     <div className={styles.root}>
-      <h2 className={styles.headline}>{title}</h2>
+      <h2 className={styles.headline}>Written by</h2>
       <ul className={styles.list}>
         {items.map(({author, _key}) => {
           const authorName = author && author.name
